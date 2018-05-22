@@ -106,7 +106,9 @@ class VCWallet {
 
 Finally, running some function calls on the below to prove this:
 
-printVCBank() will return the following. Note that all of the wallets have been instantiated with a difference currency injected. 
+
+~~~~
+// printVCBank() will return the following. Note that all of the wallets have been instantiated with a difference currency injected. 
 
 [VC-VCWallet] VC Wallet - retrieving stats
 [VC] This is AerServ Coins - Coins that you can use in the AerServ Market!
@@ -118,3 +120,4 @@ This wallet's balance: 50 IMD
 [VC] This is Gold
 This wallet's balance: 2 G
 
+~~~~
