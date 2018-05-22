@@ -9,15 +9,51 @@
 import UIKit
 
 class ViewController: UIViewController {
+    
+    // Declare an array of different types of wallet
+    var myBank: Array<VCWallet> = Array()
+
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+
+        // Initialize 'myBank' earlier; now put some wallets in the bank
+        
+        let aerWallet = AerServCoin()
+        let inWallet = InMobiDollars()
+        let gWallet = Gold()
+        
+        
+        
+        var walletA = VCWallet(walletType: aerWallet)
+        var walletB = VCWallet(walletType: inWallet)
+        var walletC = VCWallet(walletType: gWallet)
+        
+        
+        
+        
+        myBank.insert(walletA, at: 0)
+        myBank.insert(walletB, at: 1)
+        myBank.insert(walletC, at: 2)
+        
+        
+        
+        printVCBank()
+        
+        
+        
     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
+    }
+    
+    func printVCBank() {
+        
+        for wallet in myBank {
+            wallet.printStats()
+        }
     }
 
 
