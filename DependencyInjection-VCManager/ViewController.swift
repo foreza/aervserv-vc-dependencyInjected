@@ -18,16 +18,12 @@ class ViewController: UIViewController {
         super.viewDidLoad()
 
         // Initialize 'myBank' earlier; now put some wallets in the bank
-        
-        let aerWallet = AerServCoin()
-        let inWallet = InMobiDollars()
-        let gWallet = Gold()
+
         
         
-        
-        var walletA = VCWallet(walletType: aerWallet)
-        var walletB = VCWallet(walletType: inWallet)
-        var walletC = VCWallet(walletType: gWallet)
+        let walletA = VCWallet(walletType: AerServCoin())
+        let walletB = VCWallet(walletType: InMobiDollars())
+        let walletC = VCWallet(walletType: Gold())
         
         
         
@@ -35,8 +31,6 @@ class ViewController: UIViewController {
         myBank.insert(walletA, at: 0)
         myBank.insert(walletB, at: 1)
         myBank.insert(walletC, at: 2)
-        
-        
         
         printVCBank()
         

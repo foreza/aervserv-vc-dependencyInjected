@@ -94,8 +94,6 @@ class AerServCoin: Currency {
         return rewards
     }
     
-    
-
 
 }
 
