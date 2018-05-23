@@ -15,6 +15,9 @@
 		92DAD4C020B46D4E00E2678B /* DependencyInjection_VCManagerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92DAD4BF20B46D4E00E2678B /* DependencyInjection_VCManagerTests.swift */; };
 		92DAD4CB20B46D4E00E2678B /* DependencyInjection_VCManagerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92DAD4CA20B46D4E00E2678B /* DependencyInjection_VCManagerUITests.swift */; };
 		92DAD4D920B46D8F00E2678B /* VCWallet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92DAD4D820B46D8F00E2678B /* VCWallet.swift */; };
+		92DAD4DB20B4CBC600E2678B /* Currency.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92DAD4DA20B4CBC600E2678B /* Currency.swift */; };
+		92DAD4DD20B4CC3400E2678B /* AerServCoin.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92DAD4DC20B4CC3400E2678B /* AerServCoin.swift */; };
+		92DAD4DF20B4CC5F00E2678B /* InMobiDollars.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92DAD4DE20B4CC5F00E2678B /* InMobiDollars.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +52,9 @@
 		92DAD4CA20B46D4E00E2678B /* DependencyInjection_VCManagerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DependencyInjection_VCManagerUITests.swift; sourceTree = "<group>"; };
 		92DAD4CC20B46D4E00E2678B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		92DAD4D820B46D8F00E2678B /* VCWallet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VCWallet.swift; sourceTree = "<group>"; };
+		92DAD4DA20B4CBC600E2678B /* Currency.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Currency.swift; sourceTree = "<group>"; };
+		92DAD4DC20B4CC3400E2678B /* AerServCoin.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AerServCoin.swift; sourceTree = "<group>"; };
+		92DAD4DE20B4CC5F00E2678B /* InMobiDollars.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InMobiDollars.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -102,6 +108,9 @@
 				92DAD4AA20B46D4C00E2678B /* AppDelegate.swift */,
 				92DAD4AC20B46D4C00E2678B /* ViewController.swift */,
 				92DAD4D820B46D8F00E2678B /* VCWallet.swift */,
+				92DAD4DE20B4CC5F00E2678B /* InMobiDollars.swift */,
+				92DAD4DC20B4CC3400E2678B /* AerServCoin.swift */,
+				92DAD4DA20B4CBC600E2678B /* Currency.swift */,
 				92DAD4AE20B46D4C00E2678B /* Main.storyboard */,
 				92DAD4B120B46D4D00E2678B /* Assets.xcassets */,
 				92DAD4B320B46D4D00E2678B /* LaunchScreen.storyboard */,
@@ -259,7 +268,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				92DAD4DD20B4CC3400E2678B /* AerServCoin.swift in Sources */,
+				92DAD4DB20B4CBC600E2678B /* Currency.swift in Sources */,
 				92DAD4D920B46D8F00E2678B /* VCWallet.swift in Sources */,
+				92DAD4DF20B4CC5F00E2678B /* InMobiDollars.swift in Sources */,
 				92DAD4AD20B46D4C00E2678B /* ViewController.swift in Sources */,
 				92DAD4AB20B46D4C00E2678B /* AppDelegate.swift in Sources */,
 			);
@@ -437,6 +449,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = L36D2F8J6M;
 				INFOPLIST_FILE = "DependencyInjection-VCManager/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -455,6 +468,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = L36D2F8J6M;
 				INFOPLIST_FILE = "DependencyInjection-VCManager/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

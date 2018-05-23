@@ -9,34 +9,6 @@
 import Foundation
 
 
-// Each wallet will implement its own currency protocol.
-protocol Currency {
-    
-    var currencyName : String {get set}
-    var shortName : String {get set}
-    var currencyDescription : String {get set}
-    var rewards: Array<String> {get set}
-    
-    var initialAmt: Int {get set}
-    var ceilingAmt: Int {get set}
-    var smallPresetIncrement: Int {get set}
-    var mediumPresetIncrement: Int {get set}
-    var largePresetIncrement: Int {get set}
-    
-    // Printable method
-    func printInformation()
-    
-    // Get Methods
-    func getName() -> String
-    func getDescription() -> String
-    func getRewards() -> Array<String>
-    
-    
-    
-    
-}
-
-
 // The VC Wallet class will use an injected 'currency' dependency to be instantiated.
 class VCWallet {
     
@@ -57,77 +29,14 @@ class VCWallet {
         
         print("[VC-VCWallet] VC Wallet - retrieving stats")
         walletType.printInformation()
-        
         print("This wallet's balance: \(amount) \(walletType.shortName)")
     }
     
 }
 
 
-class AerServCoin: Currency {
 
-    var currencyName: String = "AerServ Coins"
-    var shortName: String = "ASC"
-    var currencyDescription: String = "Coins that you can use in the AerServ Market!"
-    var rewards: Array<String> = ["AerCat", "AerDoge"]
-    var smallPresetIncrement: Int = 5
-    var mediumPresetIncrement: Int = 50
-    var largePresetIncrement: Int = 100
-    
-    
-    var initialAmt: Int = 10
-    var ceilingAmt: Int = 1000
-    
-    func printInformation() {
-        print("[VC] This is \(currencyName) - \(currencyDescription)")
-    }
-    
-    func getName() -> String {
-        return currencyName
-    }
-    
-    func getDescription() -> String {
-        return currencyDescription
-    }
-    
-    func getRewards() -> Array<String> {
-        return rewards
-    }
-    
-
-}
-
-class InMobiDollars: Currency {
-    
-    var currencyName: String = "InMobi Dollars"
-    var shortName: String = "IMD"
-    var currencyDescription: String = "Dollars that you redeem for interesting quirky products!"
-    var rewards: Array<String> = ["Mobius Strip", "Mobi Deck", "Trip to Asia"]
-    var smallPresetIncrement: Int = 25
-    var mediumPresetIncrement: Int = 100
-    var largePresetIncrement: Int = 300
-    var initialAmt: Int = 50
-    var ceilingAmt: Int = 5000
-    
-    func printInformation() {
-        print("[VC] This is \(currencyName)")
-    }
-    
-    func getName() -> String {
-        return currencyName
-    }
-    
-    func getDescription() -> String {
-        return currencyDescription
-    }
-    
-    func getRewards() -> Array<String> {
-        return rewards
-    }
-
-    
-}
-
+// Sample implementation of the Currency Prototype
 class Gold: Currency {
     
     var currencyName: String = "Gold"
@@ -140,17 +49,22 @@ class Gold: Currency {
     var mediumPresetIncrement: Int = 2
     var largePresetIncrement: Int = 5
     
+    
+    
     func printInformation() {
         print("[VC] This is \(currencyName)")
     }
+  
     
     func getName() -> String {
         return currencyName
     }
     
+    
     func getDescription() -> String {
         return currencyDescription
     }
+    
     
     func getRewards() -> Array<String> {
         return rewards
